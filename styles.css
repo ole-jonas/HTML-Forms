@@ -9,11 +9,14 @@ body {
   background-color: white;
 }
 
-:container {
+.container {
   margin: 0 auto;
   width: 90%;
 }
 
+.red-checkbox {
+  accent-color: red;
+}
 .form-group {
   display: flex;
   flex-direction: column;
