@@ -1,9 +1,14 @@
 // Submit knappen
 const submitBtn = document.querySelector("#submit-btn");
 
-// Konventeringsbutton
+// Konventering knapp
 
-const konventeringsButton = document.querySelector("#")
+const konventeringButton = document.querySelector("#konventer-button")
+
+// Number input
+
+const numberInput = document.querySelector("#number")
+
 // Personalia elementer
 const nameInput = document.querySelector("#name");
 const surnameInput = document.querySelector("#surname");
@@ -31,7 +36,7 @@ function submit(event) {
     if (gamingElement.checked === true) {
         hobbyArray.push(gamingElement.value)
     }
-    if (kodingElement.checed === true) {
+    if (kodingElement.checked === true) {
         hobbyArray.push(kodingElement.value)
     }
 
@@ -49,8 +54,9 @@ function konventering (event) {
 
     const feet = number * 3.2
 
-    konventeringsButton.textContent = number + "meter = " + feet + "feet"
+    konventeringButton.textContent = number + "meter = " + feet + "feet"
+
 }
 
-konventeringsButton.addEventListener("click", konventering)
+konventeringButton.addEventListener("click", konventering)
 submitBtn.addEventListener("click", submit);

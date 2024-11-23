@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nb">
   <head>
-    <title>Html Forms</title>
+    <title>HTML Forms</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <!--
@@ -15,7 +15,11 @@
     <main class="container">
       <h1>HTML Forms</h1>
       <form action="/submit" method="POST">
-        <div class="fo"></div>
+        <div class="form-group">
+          <label for="number">Number</label>
+          <input type="number" id="number" name="number" />
+        </div>
+        <button id="konventer-button">Konventer</button>
         <fieldset>
           <legend>Personalia</legend>
           <div class="form-group">
@@ -50,15 +54,15 @@
         <fieldset>
           <legend>Hobbyer</legend>
           <label>
-            <input class=""red-checkbox type="checkbox" name="hobby" value="fiske" />
+            <input class="red-checkbox" type="checkbox" id="fiske" name="hobby" value="fiske" />
             Fiske
           </label>
           <label>
-            <input type="checkbox" name="hobby" value="fiske" />
+            <input type="checkbox" id="gaming" name="hobby" value="gaming" />
             Gaming
           </label>
           <label>
-            <input type="checkbox" name="hobby" value="fiske" />
+            <input type="checkbox" id="koding" name="hobby" value="koding" />
             Koding
           </label>
         </fieldset>
@@ -68,11 +72,11 @@
             <option value="">Velg ditt land</option>
             <option value="norway">Norge</option>
             <option value="sweden">Sverige</option>
-             <option value="denmark">Danmark</option>
+            <option value="denmark">Danmark</option>
           </select> 
         </div>
         <div class="form-group">
-          <label for="picture">Last opp bilde</label>
+          <label for="picture">Last opp bilde: </label>
           <input type="file" id="picture" name="picture" accept="image/*" />
         </div>
         <br />

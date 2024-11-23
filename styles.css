@@ -14,10 +14,11 @@ body {
   width: 90%;
 }
 
-.red-checkbox {
-  accent-color: red;
-}
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.red-checkbox {
+  accent-color: red;
 }
